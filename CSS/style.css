@@ -78,6 +78,9 @@ body {
     border-bottom: 1px solid #ECECEC;
 
 }
+.header a {
+    display: block;
+}
 .contact-list {
     color: var(--grey);
     margin-left: auto;
@@ -87,7 +90,6 @@ body {
     display: flex;
 }
 .nav-list a {
-    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -128,11 +130,10 @@ body {
     color: var(--white-color);
     letter-spacing: var(--letter-spacing-accent);
     text-align: center;
-}
-.hero .container {
     padding-top: 200px;
     padding-bottom: 200px;
 }
+    
 .hero-title {
     text-align: center;
     font-weight: 900;
@@ -166,10 +167,12 @@ body {
     border-radius: 4px;
 }
 /* особенности */
-.container .features {
-    display: flex;
+.wrapper {
     padding-top: 94px;
     padding-bottom: 94px;
+}
+.features {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -185,10 +188,14 @@ body {
     height: 101px;
 }
 /* занятия */
-.container.activiti {
-    padding-bottom: 94px;
+.activiti,
+.stuff {
+    text-align: center;
 }
 
+.section-wrapper {
+    background: #F5F4FA;
+}
 .list-img {
     display: flex;
 }
@@ -210,7 +217,7 @@ body {
 }
 .section {
     text-align: center;
-
+    padding-bottom: 94px;
 }
 .title {
     font-weight: 700;
@@ -218,9 +225,6 @@ body {
     line-height: 1.16;
 }
 /* команда */
-.container.stuff {
-    padding-bottom: 94px;
-}
 
 .title.team {
     margin-bottom: 50px;
@@ -234,12 +238,14 @@ body {
 }
 .group-list img {
     display: block;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
-
+.team-wrapper {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .stuff-item {
     width: 270px;
-    padding-bottom: 30px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -255,7 +261,7 @@ body {
     color:var(--grey)
 }
 /* Контент portfolio.html */
-.container.portfolio {
+.portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -308,10 +314,12 @@ body {
 }
 .example-item {
     width: 370px;
-    padding-bottom: 20px;
     margin-right: 30px;
     margin-bottom: 30px;
     border: 1px solid #EEEEEE;
+}
+.text-wrapper {
+    padding: 20px 24px;
 }
 .example-item:nth-child(3n) {
     margin-right: 0px;
@@ -321,7 +329,6 @@ body {
 }
 .example-item img {
     display: block;
-    margin-bottom: 20px;
 }
 .project {
     font-size: 18px;
