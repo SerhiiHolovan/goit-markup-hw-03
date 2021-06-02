@@ -185,7 +185,6 @@ body {
 }
 .feature-item {
     width: 270px;
-    height: 101px;
 }
 /* занятия */
 .activiti,
@@ -271,9 +270,6 @@ body {
     margin-bottom: 34px;
     justify-content: center;
     align-items: flex-start;
-    /* padding-bottom: 16px; */
-}
-.filter-button {
     padding-bottom: 16px;
 }
 .filter li + li {
@@ -349,8 +345,6 @@ body {
     background-color: var(--grey-bg);
     font-size: 14px;
     line-height: 1.71;
-}
-.footer > div {
     padding-top: 60px;
     padding-bottom: 60px;
 }
